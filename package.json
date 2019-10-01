@@ -1,0 +1,26 @@
+{
+  "name": "innerproject",
+  "version": "1.0.0",
+  "description": "Express for DB",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "multer": "^1.4.1",
+    "mysql": "github:mysqljs/mysql",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express1",
+    "js",
+    "nodejs"
+  ],
+  "author": "Tarig2211",
+  "license": "MIT"
+}

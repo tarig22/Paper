@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			FORCE
+		</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/animate.css">
+        <script>
+            
+            window.onload = function () {
+                
+                /*
+                Lodin();
+                setTimeout(function () {
+                    if (document.cookie.indexOf('MyName') > -1 && Cookie("MyName") == document.getElementById('ChickUser').className){
+                            
+                    }else{
+                        if(document.cookie.indexOf('MyName') > -1){
+                            RemoveCookie();
+                            window.location.href = "/login";
+                        }else{
+                            window.location.href = "/login";
+                        }
+                    }
+                },100);
+                */
+            };
+            window.location.reload = function () {
+                /*
+                Lodin();
+                setTimeout(function () {
+                    if (document.cookie.indexOf('MyName') > -1 && Cookie("MyName") == document.getElementById('ChickUser').className){
+                            console.log(document.getElementById('ChickUser').innerHTML);
+                    }else{
+                        if(document.cookie.indexOf('MyName') > -1){
+                            RemoveCookie();
+                            window.location.href = "/login";
+                        }else{
+                            window.location.href = "/login";
+                        }
+                    }
+                },100);
+                */
+            };
+    
+        </script>
+    </head>
+
+    <body>
+        
+        <!--  div logon (loding) -->
+        <div class="LoogoDiv">
+            <div id="app8">
+              <div id="a8d1">
+                <div id="a8d2">
+                  <div id="a8d3">
+                    <div id="a8d4">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        
+        <!--  ################################# -->
+        <!--              header                -->
+        <!--  ################################# -->
+        
+        <header>
+            <!--  the main title  of the appliction -->
+            <span class="TitelHeaderSapn">
+                Force
+            </span>
+            
+            <span id="SpanMainPage" class="IconHeaderSapn" onclick="PageUpdate();">
+                <a href="#Pclear">
+                    الرئسية
+                </a>
+            </span>
+            
+            <span id="SapnIconHeader" class="IconHeaderSapn" onclick="SpacialMessage();">
+                الرسائل
+            </span>
+            
+            
+                        
+            <!-- click to show list of more and stting and shiring imges -->
+            <span class="IconHeaderSapn" onclick="ShowLi('UlMain','OlMain');">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            
+        </header>
+        
+                    
+        <!-- Clearing the float -->
+        
+        <p class="ClearP" id="Pclear"></p>
+        
+        
+        
+        <!-- the main ul -->
+        
+        
+        <ul id="UlMain" style="position: fixed;" > 
+            <li class="TitleLi" onmouseup="location.href = '/profile' "> تعديل الملف الشخصي </li>
+            <li class="TitleLi" > نشر الصور</li>
+            <li class="TitleLi disapple" > نشر الفديو </li>
+            <li class="TitleLi" onmouseup="location.href = '/option.txt' "> الاعدادات </li>
+            <li class="TitleLi" onmousedown="Href('/login')" > تسجيل الخروج </li>
+            <li class="TitleLi" > رجوع </li>
+        </ul>
+        
+        
+        
+        
+        
+        
+        
+        <!-- div sharing -->
+        
+        <div class="SharingDiv" id="Divsharing">
+                
+            <!-- Your profile Imige -->
+            <span class="ImgSpan" id="SpanImg"></span>
+            
+            
+            <!-- form for Shring the masseges -->
+            <form action="/" method="GET" >
+                <textarea type="text" name="SharingMessage" id="SharingValue" ></textarea>
+                <input type="submit" value=" انشر "/ onclick="SaringMessageSend();">
+            </form>
+        
+        </div>
+        
+
+        
+        <div class="MainSpacilMsDiv" id="DivMainSpacilMs" >
+            <div id="DivSelectSendto" class="SelectSendtoDiv">
+                
+                <span class="TheNameSpan" id="SpanFrindName">
+                    LapM22
+                </span>
+                
+                <span class="TheSelctSpan">
+                    <span onclick="ShowLi('OlMain','UlMain');" onmouseup="SpacialMessage();" style="display: inline-block; padding: 2px 5px 2px 5px; background: navey "> الاصدقاء </span>
+                    <br>
+                    <ol id="OlMain">
+                      <li class="OlLi"> lap33324 </li>
+                    </ol>
+                </span>
+                
+            </div>
+            <div id="DivMainSpacilMsInner"></div>
+            <p style="height: 50px;" id="PscrollBottom"> </p>
+            <footer id="FooterMessage">
+                <div id="FormMessage">
+                    
+                    <input type="text" name="SendingMessage" onfocus="this.value='';"/>
+                    <button  onclick="" id="BtnSendMassege"> ارسل </button>
+                    
+                </div>
+            </footer>
+        </div>
+        
+        <div class="MainContentDiv" id="DivMainContent" >
+            <!-- adding more masseges by adding the scroll -->
+            <p class="FooterP" id="PFooter" onclick="MoreMessage();"> المزيد &nbsp;&nbsp;</p>
+        </div>
+        
+        <p id="ChickUser"></p>
+<!--
+        <footer>
+        
+        </footer>
+        
+-->
+        <script src="js/index.js" ></script>
+        <script src="ajax/ajax.js" ></script>
+        <script src="ajax/ms_ajax.js" ></script>
+        <script src="ajax/co_ajax.js" ></script>
+        <script src="ajax/login.js" ></script>
+        
+    </body>
+</html>

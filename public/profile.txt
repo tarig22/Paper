@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			FORCE
+		</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/animate.css">
+        <script>
+            
+            window.onload = function () {
+                
+                /*
+                Lodin();
+                setTimeout(function () {
+                    if (document.cookie.indexOf('MyName') > -1 && Cookie("MyName") == document.getElementById('ChickUser').className){
+                            
+                    }else{
+                        if(document.cookie.indexOf('MyName') > -1){
+                            RemoveCookie();
+                            window.location.href = "/login";
+                        }else{
+                            window.location.href = "/login";
+                        }
+                    }
+                },100);
+                */
+            };
+            window.location.reload = function () {
+                /*
+                Lodin();
+                setTimeout(function () {
+                    if (document.cookie.indexOf('MyName') > -1 && Cookie("MyName") == document.getElementById('ChickUser').className){
+                            console.log(document.getElementById('ChickUser').innerHTML);
+                    }else{
+                        if(document.cookie.indexOf('MyName') > -1){
+                            RemoveCookie();
+                            window.location.href = "/login";
+                        }else{
+                            window.location.href = "/login";
+                        }
+                    }
+                },100);
+                */
+            };
+    
+        </script>
+    </head>
+
+    <body>
+        
+        <!--  div logon (loding) -->
+        <div class="LoogoDiv">
+            <div id="app8">
+              <div id="a8d1">
+                <div id="a8d2">
+                  <div id="a8d3">
+                    <div id="a8d4">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        
+        <!--  ################################# -->
+        <!--              header                -->
+        <!--  ################################# -->
+        
+        <header>
+            <!--  the main title  of the appliction -->
+            <span class="TitelHeaderSapn">
+                Force
+            </span>
+
+            <span id="SpanMainPage" class="IconHeaderSapn">
+                <a href="/">
+                    الرئسية
+                </a>
+            </span>
+            
+        
+            
+            
+                        
+            <!-- click to show list of more and stting and shiring imges -->
+            <span style="margin-left: 3px; float: left;" onclick="location.href = '/' ">
+             
+                صفحة شخصية
+             </span>
+            
+        </header>
+        
+                    
+        <!-- Clearing the float -->
+        
+        <p class="ClearP" id="Pclear"></p>
+        
+        
+        
+        <!-- the main ul -->
+        
+        
+        
+
+        
+        
+        <span class="ParsonSpan2" id="">e</span>
+        <span class="TheNameSpan" id="">e</span>
+        
+<!-- 
+        <script src="js/index.js" ></script>
+        <script src="ajax/ajax.js" ></script>
+        <script src="ajax/ms_ajax.js" ></script>
+        <script src="ajax/co_ajax.js" ></script>
+        <script src="ajax/login.js" ></script> -->
+        
+    </body>
+</html>

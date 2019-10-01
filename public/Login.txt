@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORCE</title>
+        
+        <meta charset="utf-8">
+        <style>
+          * { 
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box; 
+            }
+            button:hover,.NewUserPage:hover{
+                opacity: .6
+            }
+            a{
+                text-decoration: none;
+            }
+          body {
+              font: 13px Helvetica, Arial;
+            }
+          form { 
+              background: #f5f5f5;
+              padding: 10%;
+              padding-top: 40px;
+              width: 90%; 
+              margin: 50px auto;
+              text-align: center;
+              border-radius: 10px;
+              border: 1px solid #dcdcdc;
+              margin-bottom: 20px;
+            }
+          form input { 
+              border: 0; 
+              padding: 5px;
+              width: 100%; 
+              margin: 2px; 
+              border-radius: 5px;
+              border: 1px solid cadetblue;
+            }
+          form button {
+              background: rgb(130, 224, 255);
+              border: none;
+              padding: 5px 15px 5px 15px;
+              
+              border-radius: 5px;
+            }
+            .NewUserPage{
+              background: rgb(130, 224, 255);
+              width: 70%;
+              margin: 1px auto;
+              border: 1px solid cadetblue;
+              padding: 5px 15px 5px 15px;
+              border-radius: 5px;
+              text-align: center;
+           }
+          </style>
+        <script>
+            window.onload =function() {
+               
+            }
+        </script>
+    </head>
+    
+    <body>
+        <form action="/" method="GET" onsubmit="">
+          <input id="m" autocomplete="off" placeholder="UserName" name="username"/>
+            <br>
+          <input id="m" autocomplete="off" placeholder="PassWord" name="password"/>
+            <br>
+            <button onclick="">Send</button>
+        </form>
+        <div class="NewUserPage" onclick='Href("/newacount");'> <a href="/newacount">تسجيل جديد</a> </div>
+        
+        <script>
+            function Href(Arg){
+                window.location.href = Arg;
+            }
+
+            
+        </script>
+        
+    </body>
+</html>

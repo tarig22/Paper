@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORCE</title>
+        <meta charset="utf-8">
+        <style>
+            a{
+                text-decoration: none;
+            }
+.LoogoDiv{
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+	width: 99%;
+	height: 98%;
+	background: #00000033;
+	border-radius: 10px;
+}
+#app8
+{
+    width: 160px;
+    text-align: center;
+    z-index: 100000;
+	border-radius: 10px;
+    margin: 10px auto;
+}
+#app8 div
+{
+	animation: app8 6s 0s infinite ease-in-out;
+	border-radius: 50%;
+	border: 1px solid cadetblue;
+	border-bottom-color: #dcdcdc00;
+	border-top-color: #dcdcdc00;
+	margin: 15px;
+}
+#a8d1
+{
+	width: 120px;
+	height: 120px;
+}
+
+#a8d2
+{
+	width: 90px;
+	height: 90px;
+}
+
+#a8d3
+{
+	width: 60px;
+	height: 60px;
+}
+#a8d4
+{
+	width: 30px;
+	height: 30px;
+}
+
+@keyframes app8 {
+	0%{
+	}	
+	49%{
+		transform: rotate(180deg)
+	}	
+	51%{
+		transform: rotate(180deg)
+	}	
+	98%{
+		transform: rotate(0deg)
+	}100%{
+		transform: rotate(0deg)
+	}
+}
+
+          * { 
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box; 
+            }
+          body {
+              font: 13px Helvetica, Arial;
+            }
+          #DivStat{ 
+              background: ##f5f5f5;
+              padding: 10%;
+              padding-top: 40px;
+              width: 90%; 
+              margin: 50px auto;
+              text-align: center;
+              border-radius: 10px;
+              border: 1px solid #dcdcdc;
+            }
+          #DivStat input { 
+              border: 0; 
+              padding: 5px;
+              width: 100%; 
+              margin: 2px; 
+              border-radius: 5px;
+              border: 1px solid cadetblue;
+            }
+          #DivStat button {
+              background: rgb(130, 224, 255);
+              border: none;
+              padding: 5px 15px 5px 15px;
+              border-radius: 5px;
+            }
+            .NewUserPage{
+              background: rgb(130, 224, 255);
+              width: 70%;
+              margin: 1px auto;
+              border: 1px solid cadetblue;
+              padding: 5px 15px 5px 15px;
+              border-radius: 5px;
+              text-align: center;
+           }
+            table{
+                background: #f5f5f5;
+                margin: 1px auto;
+                direction: rtl;
+                border-radius: 5px;
+            }
+            table td{
+                margin: 2px;
+                padding: 5px;
+                border: 1px solid #dcdcdc;
+                border-radius: 5px;
+            }
+          </style>
+        <script>
+            window.onload =function() {
+               
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div id="DivStat">
+          <input  type="text" autocomplete="off" placeholder="UserName" id="username" />
+            <br>
+          <input type="text"  autocomplete="off" placeholder="FullName" id="fullname"/>
+            <br>
+          <input type="text" autocomplete="off" placeholder="PassWord" id="password"/>
+            <br>
+            <button onclick="Singin();">Send</button>
+            <br><br>
+            <div class="NewUserPage" onclick='Href("/login");'> <a href="/login"> مسجل مسبقا </a> </div>
+        </div>
+        
+        <script>
+            function Href(Arg){
+                window.location.href = Arg;
+            }
+            function Singin() {
+                var myRequest,
+                    us = document.getElementById('username').value,
+                    ps = document.getElementById('password').value,
+                    fn = document.getElementById('fullname').value;
+                
+                if(window.XMLHttpRequest) {
+                    myRequest = new XMLHttpRequest();
+                }else {
+                    myRequest = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                myRequest.onreadystatechange = SinginResponse;
+
+                myRequest.open("GET","/singn?us="+ us +"&ps="+ps+"&fn="+fn+" ", true);
+                myRequest.send();
+                
+                
+            }
+
+            function SinginResponse() {
+                var DivStat= document.getElementById('DivStat');
+
+                if(this.readyState > 0 && this.readyState < 4) {
+
+                }else if (this.readyState == 4 || this.readyState == 200) {
+                    
+                   DivStat.innerHTML = this.responseText;
+                    
+                    
+                    
+                } else {
+                    DivStat.innerHTML = "<span style='color:red' >Access Dinine !</span>";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+
+.LoogoDiv{
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+	width: 99%;
+	height: 98%;
+	background: #00000033;
+	border-radius: 10px;
+}
+#app8
+{
+    width: 180px;
+    text-align: center;
+    z-index: 100000;
+	border-radius: 10px;
+    margin: 100px auto
+}
+#app8 div
+{
+	animation: app8 6s 0s infinite ease-in-out;
+	border-radius: 50%;
+	border: 1px solid cadetblue;
+	border-bottom-color: #dcdcdc00;
+	border-top-color: #dcdcdc00;
+	margin: 15px;
+}
+#a8d1
+{
+	width: 150px;
+	height: 150px;
+}
+
+#a8d2
+{
+	width: 120px;
+	height: 120px;
+}
+
+#a8d3
+{
+	width: 90px;
+	height: 90px;
+}
+#a8d4
+{
+	width: 60px;
+	height: 60px;
+}
+
+@keyframes app8 {
+	0%{
+	}	
+	49%{
+		transform: rotate(180deg)
+	}	
+	51%{
+		transform: rotate(180deg)
+	}	
+	98%{
+		transform: rotate(0deg)
+	}100%{
+		transform: rotate(0deg)
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
